@@ -57,7 +57,7 @@ for dir in opt.dir:
   data_loaders+=[torch.utils.data.DataLoader(dataset,
                                           batch_size=opt.batch_size,
                                           shuffle=False,
-                                          num_workers=opt.workers),]
+                                          num_workers=0),]
 
 y_true, y_pred = [], []
 Hs, Ws = [], []
